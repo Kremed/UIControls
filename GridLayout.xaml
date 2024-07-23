@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.GridLayout"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridLayout">
+
+    <!--
+        هو تخطيط مرن وقوي يمكنك من تنظيم العناصر في شبكة من الصفوف والأعمدة  Grid
+        يمكنك التحكم في حجم كل صف وعمود، بالإضافة إلى تعيين المسافات .
+        هذا التخطيط مثالي لتنسيق المحتويات المعقدة بشكل دقيق.
+    -->
+
+    <Grid
+        Margin="30"
+        Padding="20"
+        BackgroundColor="LightGray"
+        ColumnDefinitions="*,*"
+        ColumnSpacing="10"
+        HeightRequest="500"
+        RowDefinitions="auto,*,*,*"
+        RowSpacing="10">
+
+        <!--  Add controls to the grid  -->
+        <Label
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="LightBlue"
+            HorizontalOptions="Center"
+            Text="Grid Header :"
+            VerticalOptions="Center" />
+
+        <Button
+            x:Name="BtnStackLayout"
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="LightGreen"
+            Clicked="BtnStackLayout_Clicked"
+            Text="StackLayout"
+            TextColor="Black" />
+
+        <Button
+            x:Name="BtnEntryPage"
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="LightCoral"
+            Clicked="BtnEntryPage_Clicked"
+            Text="Entry Page"
+            TextColor="Black" />
+
+        <Button
+            x:Name="BtnButtonsPage"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            BackgroundColor="LightYellow"
+            Clicked="BtnButtonsPage_Clicked"
+            Text="Buttons Page"
+            TextColor="Black" />
+
+
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="LightGreen"
+            Clicked="Button_Clicked"
+            Text="" />
+
+
+    </Grid>
+</ContentPage>

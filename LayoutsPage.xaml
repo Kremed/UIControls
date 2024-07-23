@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.LayoutsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LayoutsPage">
+
+    <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout Margin="10">
+
+            <!--  StackLayout: يمكن استخدامه لترتيب العناصر بشكل خطي، إما عموديًا أو أفقيًا.  -->
+            <StackLayout
+                Margin="10"
+                BackgroundColor="LavenderBlush"
+                VerticalOptions="FillAndExpand">
+
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+
+
+                <HorizontalStackLayout BackgroundColor="White" Spacing="20">
+                    <Button BackgroundColor="Aquamarine" Text="Click me" />
+                    <Button Text="Click me 2" />
+
+                </HorizontalStackLayout>
+
+            </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <StackLayout
+                Padding="20"
+                BackgroundColor="LightGray"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="False"
+                Orientation="Vertical"
+                Spacing="10">
+                <Label
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="StackLayout Properties Example" />
+                <Button
+                    BackgroundColor="LightBlue"
+                    HorizontalOptions="Fill"
+                    Text="Button 1" />
+                <Button
+                    BackgroundColor="LightGreen"
+                    HorizontalOptions="Fill"
+                    Text="Button 2" />
+                <Button
+                    BackgroundColor="LightCoral"
+                    HorizontalOptions="Fill"
+                    Text="Button 3" />
+            </StackLayout>
+
+            <!--  VerticalStackLayout: محسّن لترتيب العناصر عموديًا فقط.  -->
+            <VerticalStackLayout
+                Padding="20"
+                BackgroundColor="LightGoldenrodYellow"
+                IsVisible="False"
+                Spacing="10">
+                <Label
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Vertical Stack Layout Properties Example" />
+                <Button
+                    BackgroundColor="LightBlue"
+                    HorizontalOptions="Fill"
+                    Text="Button 1" />
+                <Button
+                    BackgroundColor="LightCoral"
+                    HorizontalOptions="Fill"
+                    Text="Button 3" />
+                <Button
+                    BackgroundColor="LightGreen"
+                    HorizontalOptions="Fill"
+                    Text="Button 2" />
+            </VerticalStackLayout>
+
+            <!--  HorizontalStackLayout: محسّن لترتيب العناصر أفقيًا فقط.  -->
+            <HorizontalStackLayout
+                Margin="30"
+                Padding="20"
+                BackgroundColor="LightCyan"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Spacing="10"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    FontSize="10"
+                    HorizontalOptions="Center"
+                    Text="Horizontal Stack Layout:" />
+                <Button
+                    BackgroundColor="LightCoral"
+                    HorizontalOptions="Fill"
+                    Text="BTN 3" />
+                <Button
+                    BackgroundColor="LightGreen"
+                    HorizontalOptions="Fill"
+                    Text="BTN 2" />
+                <Button
+                    BackgroundColor="LightBlue"
+                    HorizontalOptions="Fill"
+                    Text="BTN 1" />
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

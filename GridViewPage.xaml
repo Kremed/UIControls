@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.GridViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridViewPage">
+
+    <Grid
+        Margin="10"
+        ColumnDefinitions="50*,50*,50*"
+        ColumnSpacing="10"
+        RowDefinitions="*,*,*,*"
+        RowSpacing="10"
+        VerticalOptions="FillAndExpand">
+
+        <Button
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Aqua" />
+        <Button
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Firebrick"
+            Text="fkkkkk" />
+
+        <Button
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            BackgroundColor="Black"
+            Text="fkkkkk" />
+
+
+        <!--<Button
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="Brown" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="Orange" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            BackgroundColor="Yellow" />-->
+
+
+
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.EntryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="EntryPage">
+
+    <!--
+        هو عنصر واجهة مستخدم متعدد الاستخدامات لإدخال النصوص في تطبيقات Entry
+        يمكن تخصيصه بطرق متعددة ليتناسب مع تصميم التطبيق ومتطلبات المستخدم.
+        لجمع اسم المستخدم وكلمة المرور مع توفير ملاحظات بصرية واضحة للمستخدم.
+        
+        ===============================الخصـــائص======================
+        
+        Text: النص الحالي داخل Entry.
+        Placeholder: النص الذي يظهر كعلامة مؤقتة عندما يكون Entry فارغًا.
+        IsPassword: إذا كان Entry يجب أن يخفي النص المُدخل (مثالي لكلمات المرور).
+        Keyboard: نوع لوحة المفاتيح التي تظهر (مثل الأرقام، النص الكامل، البريد الإلكتروني، إلخ).
+        TextColor: لون النص داخل Entry.
+        PlaceholderColor: لون النص المؤقت.
+        BackgroundColor: لون الخلفية.
+        FontSize: حجم النص.
+        HorizontalTextAlignment: محاذاة النص أفقيًا.
+        VerticalOptions و HorizontalOptions: تحديد كيفية توزيع المساحة غير المستخدمة حول Entry.
+    -->
+
+    <VerticalStackLayout Margin="20">
+        <Label
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="Enter your name:" />
+
+
+        <Entry
+            x:Name="TxtName"
+            BackgroundColor="LightGray"
+            CharacterSpacing="15"
+            ClearButtonVisibility="WhileEditing"
+            Completed="TxtName_Completed"
+            CursorPosition="0"
+            DescendantAdded="TxtName_DescendantAdded"
+            DescendantRemoved="TxtName_DescendantRemoved"
+            FlowDirection="RightToLeft"
+            Focused="TxtName_Focused"
+            FontSize="18"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Start"
+            Keyboard="Email"
+            MaxLength="10"
+            Placeholder="Name"
+            PlaceholderColor="LightCoral"
+            ReturnType="Next"
+            TextChanged="TxtName_TextChanged"
+            TextColor="Black"
+            TextTransform="Uppercase"
+            Unfocused="TxtName_Unfocused"
+            VerticalOptions="Center" />
+
+
+        <Label
+            Margin="0,20,0,0"
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="Enter your Phone:" />
+
+        <Entry
+            x:Name="TxtPhone"
+            BackgroundColor="LightGray"
+            FontSize="18"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Start"
+            Keyboard="Telephone"
+            Placeholder="+218924447446"
+            PlaceholderColor="Gray"
+            TextColor="Black"
+            VerticalOptions="Center" />
+
+        <Label
+            Margin="0,20,0,0"
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="Enter your password:" />
+
+        <Entry
+            x:Name="TxtPassword"
+            BackgroundColor="LightGray"
+            FontSize="18"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Start"
+            IsPassword="True"
+            Placeholder="Password"
+            PlaceholderColor="Gray"
+            TextColor="Black"
+            VerticalOptions="Center" />
+
+        <Button
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            Text="Submit"
+            VerticalOptions="EndAndExpand" />
+    </VerticalStackLayout>
+</ContentPage>

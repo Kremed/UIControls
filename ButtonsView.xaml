@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.ButtonsView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ButtonsView">
+    <StackLayout Margin="10">
+
+        <!--  الاحداث الخاصة بالازرار  -->
+        <Button
+            x:Name="BtnEvent"
+            Clicked="OnButtonClicked"
+            ImageSource="dotnet_bot.png"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
+            Text="الاحداث - Events" />
+
+        <!--  الخصائص الخاصة بالازرار  -->
+        <Button
+            x:Name="myButton"
+            Margin="10"
+            Padding="10"
+            BackgroundColor="LightBlue"
+            BorderColor="DarkBlue"
+            BorderWidth="2"
+            CornerRadius="10"
+            FontAttributes="Bold"
+            FontSize="20"
+            HeightRequest="60"
+            HorizontalOptions="FillAndExpand"
+            ImageSource="appicon.svg"
+            IsEnabled="True"
+            IsVisible="True"
+            Opacity="0.9"
+            Text="الخصائص - Properties"
+            TextColor="White"
+            VerticalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
