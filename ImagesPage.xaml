@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.ImagesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImagesPage">
+    <VerticalStackLayout>
+
+
+        <!--<Border
+            BackgroundColor="Aqua"
+            HeightRequest="180"
+            StrokeShape="RoundRectangle 70,10,5,30"
+            WidthRequest="180">-->
+
+        <Image
+            Margin="20"
+            Aspect="AspectFill"
+            BackgroundColor="Red"
+            HeightRequest="190"
+            HorizontalOptions="Center"
+            Source="pub_battlegrounds.jpg"
+            WidthRequest="180" />
+        <!--</Border>-->
+
+
+        <Image
+            Margin="20"
+            Aspect="AspectFit"
+            HeightRequest="190"
+            HorizontalOptions="Center"
+            Source="https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-1e9a7.jpg"
+            WidthRequest="180" />
+
+
+
+
+
+        <Image Source="dotnet_bot.png" />
+        <Image Source="pubg.jpg" />
+        <Image Source="pub_battlegrounds.jpg" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

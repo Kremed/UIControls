@@ -12,6 +12,7 @@
             <StackLayout
                 Margin="10"
                 BackgroundColor="LavenderBlush"
+                IsVisible="False"
                 VerticalOptions="FillAndExpand">
 
                 <Label Text="Hi Form Stacklayput" />
@@ -20,12 +21,28 @@
                 <Label Text="Hi Form Stacklayput" />
                 <Label Text="Hi Form Stacklayput" />
                 <Label Text="Hi Form Stacklayput" />
-
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
+                <Label Text="Hi Form Stacklayput" />
 
                 <HorizontalStackLayout BackgroundColor="White" Spacing="20">
                     <Button BackgroundColor="Aquamarine" Text="Click me" />
                     <Button Text="Click me 2" />
-
                 </HorizontalStackLayout>
 
             </StackLayout>
@@ -33,68 +50,32 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <StackLayout
+                Margin="20"
                 Padding="20"
                 BackgroundColor="LightGray"
-                HorizontalOptions="FillAndExpand"
-                IsVisible="False"
                 Orientation="Vertical"
-                Spacing="10">
+                Spacing="10"
+                VerticalOptions="FillAndExpand">
                 <Label
+                    BackgroundColor="Red"
                     FontSize="20"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="End"
                     Text="StackLayout Properties Example" />
                 <Button
                     BackgroundColor="LightBlue"
                     HorizontalOptions="Fill"
                     Text="Button 1" />
-                <Button
-                    BackgroundColor="LightGreen"
-                    HorizontalOptions="Fill"
-                    Text="Button 2" />
-                <Button
-                    BackgroundColor="LightCoral"
-                    HorizontalOptions="Fill"
-                    Text="Button 3" />
+
             </StackLayout>
 
             <!--  VerticalStackLayout: محسّن لترتيب العناصر عموديًا فقط.  -->
             <VerticalStackLayout
                 Padding="20"
-                BackgroundColor="LightGoldenrodYellow"
-                IsVisible="False"
-                Spacing="10">
+                BackgroundColor="HotPink"
+                Spacing="10"
+                VerticalOptions="FillAndExpand">
                 <Label
                     FontSize="20"
                     HorizontalOptions="Center"
@@ -104,22 +85,18 @@
                     HorizontalOptions="Fill"
                     Text="Button 1" />
                 <Button
-                    BackgroundColor="LightCoral"
+                    BackgroundColor="LightBlue"
                     HorizontalOptions="Fill"
-                    Text="Button 3" />
-                <Button
-                    BackgroundColor="LightGreen"
-                    HorizontalOptions="Fill"
-                    Text="Button 2" />
+                    Text="Button 1" />
+
+
             </VerticalStackLayout>
 
             <!--  HorizontalStackLayout: محسّن لترتيب العناصر أفقيًا فقط.  -->
             <HorizontalStackLayout
-                Margin="30"
                 Padding="20"
                 BackgroundColor="LightCyan"
-                HorizontalOptions="Center"
-                IsVisible="False"
+                HorizontalOptions="FillAndExpand"
                 Spacing="10"
                 VerticalOptions="FillAndExpand">
                 <Label
@@ -131,13 +108,9 @@
                     HorizontalOptions="Fill"
                     Text="BTN 3" />
                 <Button
-                    BackgroundColor="LightGreen"
+                    BackgroundColor="LightCoral"
                     HorizontalOptions="Fill"
-                    Text="BTN 2" />
-                <Button
-                    BackgroundColor="LightBlue"
-                    HorizontalOptions="Fill"
-                    Text="BTN 1" />
+                    Text="BTN 3" />
             </HorizontalStackLayout>
 
         </StackLayout>

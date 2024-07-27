@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.PickerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="PickerPage">
+    <VerticalStackLayout Margin="20">
+        <!--  ItemDisplayBinding="Name"  -->
+        <Picker
+            x:Name="StudentsPicker"
+            Title="الرجاء اختيار الطالب"
+            FontSize="16"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            SelectedIndexChanged="StudentsPicker_SelectedIndexChanged" />
+
+        <Label
+            x:Name="LblStudentResult"
+            FontSize="12"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            Text="الاسم المختار سيظهر هنا ....." />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UIControls.CalculatorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CalculatorPage">
+    <Grid
+        Margin="20"
+        ColumnDefinitions="*,*,*,*"
+        ColumnSpacing="10"
+        HorizontalOptions="FillAndExpand"
+        RowDefinitions="*,60,60,60,60,60"
+        RowSpacing="10">
+
+        <VerticalStackLayout
+            Grid.ColumnSpan="4"
+            Padding="10"
+            BackgroundColor="LightGray"
+            VerticalOptions="EndAndExpand">
+            <Label
+                x:Name="LblHistory"
+                FontSize="16"
+                HorizontalTextAlignment="End"
+                Text=""
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="LblResult"
+                FontSize="16"
+                HorizontalTextAlignment="End"
+                IsVisible="False"
+                Text=""
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+
+            <Label
+                x:Name="LblMoniter"
+                FontSize="34"
+                HorizontalTextAlignment="End"
+                Text=""
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+        </VerticalStackLayout>
+
+        <!--  C - () - % - /  -->
+        <Button
+            x:Name="BtnClear"
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="Orange"
+            BorderColor="Orange"
+            BorderWidth="1"
+            Clicked="BtnClear_Clicked"
+            FontSize="22"
+            HorizontalOptions="FillAndExpand"
+            Text="C"
+            TextColor="White"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="Gray"
+            HorizontalOptions="FillAndExpand"
+            Text="()"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            HorizontalOptions="FillAndExpand"
+            Text="%"
+            VerticalOptions="FillAndExpand" />
+
+        <Button
+            x:Name="Btndevide"
+            Grid.Row="1"
+            Grid.Column="3"
+            BackgroundColor="White"
+            BorderColor="Orange"
+            BorderWidth="1"
+            Clicked="BtnOperation_Clicked"
+            FontSize="22"
+            HorizontalOptions="FillAndExpand"
+            Text="/"
+            TextColor="Orange"
+            VerticalOptions="FillAndExpand" />
+
+
+
+
+        <!--  7 -8 - 9 - *  -->
+        <Button
+            x:Name="Btn7"
+            Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Gray"
+            Clicked="Btn7_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="7"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn8"
+            Grid.Row="2"
+            Grid.Column="1"
+            BackgroundColor="Gray"
+            Clicked="Btn8_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="8"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn9"
+            Grid.Row="2"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            Clicked="Btn9_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="9"
+            VerticalOptions="FillAndExpand" />
+
+        <Button
+            x:Name="BtnMultbluay"
+            Grid.Row="2"
+            Grid.Column="3"
+            BackgroundColor="White"
+            BorderColor="Orange"
+            BorderWidth="1"
+            Clicked="BtnOperation_Clicked"
+            FontSize="22"
+            HorizontalOptions="FillAndExpand"
+            Text="*"
+            TextColor="Orange"
+            VerticalOptions="FillAndExpand" />
+
+
+
+        <!--  4 -5 - 6 - -  -->
+        <Button
+            x:Name="Btn4"
+            Grid.Row="3"
+            Grid.Column="0"
+            BackgroundColor="Gray"
+            Clicked="Btn4_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="4"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn5"
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="Gray"
+            Clicked="Btn5_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="5"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn6"
+            Grid.Row="3"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            Clicked="Btn6_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="6"
+            VerticalOptions="FillAndExpand" />
+
+        <Button
+            x:Name="BtnMain"
+            Grid.Row="3"
+            Grid.Column="3"
+            BackgroundColor="White"
+            BorderColor="Orange"
+            BorderWidth="1"
+            Clicked="BtnOperation_Clicked"
+            FontSize="20"
+            HorizontalOptions="FillAndExpand"
+            Text="-"
+            TextColor="Orange"
+            VerticalOptions="FillAndExpand" />
+
+
+
+
+
+        <!--  1 -2 3 -  +  -->
+        <Button
+            x:Name="Btn1"
+            Grid.Row="4"
+            Grid.Column="0"
+            BackgroundColor="Gray"
+            Clicked="Btn1_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="1"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn2"
+            Grid.Row="4"
+            Grid.Column="1"
+            BackgroundColor="Gray"
+            Clicked="Btn2_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="2"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="Btn3"
+            Grid.Row="4"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            Clicked="Btn3_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="3"
+            VerticalOptions="FillAndExpand" />
+
+        <Button
+            x:Name="BtnPlus"
+            Grid.Row="4"
+            Grid.Column="3"
+            BackgroundColor="White"
+            BorderColor="Orange"
+            BorderWidth="1"
+            Clicked="BtnOperation_Clicked"
+            FontSize="22"
+            HorizontalOptions="FillAndExpand"
+            Text="+"
+            TextColor="Orange"
+            VerticalOptions="FillAndExpand" />
+
+
+
+
+
+
+        <!--  0 - . - =  -->
+
+        <Button
+            x:Name="Btn0"
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Gray"
+            Clicked="Btn0_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="0"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="BtnPoint"
+            Grid.Row="5"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            Clicked="BtnPoint_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="."
+            VerticalOptions="FillAndExpand" />
+        <Button
+            x:Name="BtnEquel"
+            Grid.Row="5"
+            Grid.Column="3"
+            BackgroundColor="Green"
+            BorderColor="Green"
+            BorderWidth="1"
+            Clicked="BtnEquel_Clicked"
+            FontSize="22"
+            HorizontalOptions="FillAndExpand"
+            Text="="
+            TextColor="White"
+            VerticalOptions="FillAndExpand" />
+    </Grid>
+</ContentPage>

@@ -7,13 +7,18 @@
     <StackLayout Margin="10">
 
         <!--  الاحداث الخاصة بالازرار  -->
+        <!--  ImageSource="dotnet_bot.png"  -->
         <Button
             x:Name="BtnEvent"
             Clicked="OnButtonClicked"
-            ImageSource="dotnet_bot.png"
             Pressed="OnButtonPressed"
             Released="OnButtonReleased"
             Text="الاحداث - Events" />
+
+
+
+
+
 
         <!--  الخصائص الخاصة بالازرار  -->
         <Button
@@ -21,19 +26,20 @@
             Margin="10"
             Padding="10"
             BackgroundColor="LightBlue"
-            BorderColor="DarkBlue"
+            BorderColor="Red"
             BorderWidth="2"
-            CornerRadius="10"
+            CornerRadius="20"
+            FlowDirection="RightToLeft"
             FontAttributes="Bold"
             FontSize="20"
             HeightRequest="60"
             HorizontalOptions="FillAndExpand"
-            ImageSource="appicon.svg"
+            ImageSource="inbox.png"
             IsEnabled="True"
             IsVisible="True"
             Opacity="0.9"
             Text="الخصائص - Properties"
-            TextColor="White"
+            TextColor="Black"
             VerticalOptions="Center" />
 
     </StackLayout>

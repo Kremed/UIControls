@@ -3,22 +3,20 @@
     x:Class="UIControls.GridLayout"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="GridLayout">
+    Title="GridLayout"
+    FlowDirection="RightToLeft">
 
     <!--
         هو تخطيط مرن وقوي يمكنك من تنظيم العناصر في شبكة من الصفوف والأعمدة  Grid
         يمكنك التحكم في حجم كل صف وعمود، بالإضافة إلى تعيين المسافات .
         هذا التخطيط مثالي لتنسيق المحتويات المعقدة بشكل دقيق.
     -->
-
     <Grid
-        Margin="30"
         Padding="20"
         BackgroundColor="LightGray"
         ColumnDefinitions="*,*"
         ColumnSpacing="10"
-        HeightRequest="500"
-        RowDefinitions="auto,*,*,*"
+        RowDefinitions="auto,*,*,*,*,*,*,*,*"
         RowSpacing="10">
 
         <!--  Add controls to the grid  -->
@@ -30,43 +28,87 @@
             Text="Grid Header :"
             VerticalOptions="Center" />
 
+        <!--  Stack Layout Page  -->
         <Button
             x:Name="BtnStackLayout"
             Grid.Row="1"
             Grid.Column="0"
-            BackgroundColor="LightGreen"
+            BackgroundColor="#03346E"
             Clicked="BtnStackLayout_Clicked"
-            Text="StackLayout"
-            TextColor="Black" />
+            LineBreakMode="WordWrap"
+            Text="StackLayout الحاويات "
+            TextColor="White" />
 
+        <!--  Entry Page  -->
         <Button
             x:Name="BtnEntryPage"
             Grid.Row="1"
             Grid.Column="1"
-            BackgroundColor="LightCoral"
+            BackgroundColor="#173B45"
             Clicked="BtnEntryPage_Clicked"
-            Text="Entry Page"
-            TextColor="Black" />
+            LineBreakMode="WordWrap"
+            Text="Entry Page حقول الادخال"
+            TextColor="White" />
 
+        <!--  Buttons Page  -->
         <Button
             x:Name="BtnButtonsPage"
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="3"
-            BackgroundColor="LightYellow"
+            BackgroundColor="#88D66C"
             Clicked="BtnButtonsPage_Clicked"
-            Text="Buttons Page"
+            LineBreakMode="WordWrap"
+            Text="Buttons Page - صفحة الازرار "
             TextColor="Black" />
 
-
-
+        <!--  Grid View Page  -->
         <Button
+            x:Name="BtnGridView"
             Grid.Row="3"
             Grid.Column="1"
-            BackgroundColor="LightGreen"
-            Clicked="Button_Clicked"
-            Text="" />
+            BackgroundColor="#677D6A"
+            Clicked="BtnGridView_Clicked"
+            LineBreakMode="WordWrap"
+            Text="Grid View حاوية الشبكة"
+            TextColor="Black" />
 
+        <!--  Images  Page  -->
+        <Button
+            x:Name="BtnGoImages"
+            Grid.Row="3"
+            Grid.Column="0"
+            BackgroundColor="#433D8B"
+            Clicked="BtnGoImages_Clicked"
+            LineBreakMode="WordWrap"
+            Text="Images Page الصور"
+            TextColor="White" />
+
+        <!--  Picker Page  -->
+        <Button
+            x:Name="BtnPicerPage"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Padding="50,0"
+            BackgroundColor="#FF5F00"
+            Clicked="BtnPicerPage_Clicked"
+            LineBreakMode="WordWrap"
+            Text="Picer Page قائمة الاختيارات"
+            TextColor="White" />
+
+        <!--  Picker Page  -->
+        <Button
+            x:Name="BtnCalculator"
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Padding="50,0"
+            BackgroundColor="Brown"
+            Clicked="BtnCalculator_Clicked"
+            LineBreakMode="WordWrap"
+            Text="Calculator Page الالة الحـاسبة"
+            TextColor="White" />
 
     </Grid>
 </ContentPage>

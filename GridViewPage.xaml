@@ -6,6 +6,136 @@
     Title="GridViewPage">
 
     <Grid
+        BackgroundColor="Aqua"
+        ColumnDefinitions="*,auto,*,auto"
+        ColumnSpacing="10"
+        RowDefinitions="*,*,*,*"
+        RowSpacing="10">
+        <!--<Button Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
+        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Button Grid.Row="2" Grid.Column="1" />
+        <Button Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" />-->
+
+
+
+
+        <Button Grid.Row="1" Grid.Column="0" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            WidthRequest="99" />
+        <Button Grid.Row="1" Grid.Column="2" />
+        <Button Grid.Row="1" Grid.Column="3" />
+
+        <Button Grid.Row="0" Grid.Column="0" />
+        <Button Grid.Row="0" Grid.Column="1" />
+        <Button Grid.Row="0" Grid.Column="2" />
+        <Button Grid.Row="0" Grid.Column="3" />
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<Grid
+        Padding="10"
+        BackgroundColor="Red"
+        ColumnDefinitions="*,auto,*"
+        ColumnSpacing="10"
+        RowDefinitions="*,*,*"
+        RowSpacing="10">
+        <Button
+            Grid.Row="0"
+            Grid.Column="0"
+            CornerRadius="15"
+            Text="0" />
+        <Button
+            Grid.Row="0"
+            Grid.Column="1"
+            LineBreakMode="WordWrap"
+            Text="111111111111111jhggjhgjhhgj0"
+            WidthRequest="100" />
+        <Button
+            Grid.Row="0"
+            Grid.Column="2"
+            Text="0" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="0" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="000" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="99" />
+    </Grid>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<Grid
+        IsVisible="False"
         Margin="10"
         ColumnDefinitions="50*,50*,50*"
         ColumnSpacing="10"
@@ -35,7 +165,8 @@
             Text="fkkkkk" />
 
 
-        <!--<Button
+    -->
+    <!--<Button
             Grid.Row="1"
             Grid.Column="0"
             BackgroundColor="Brown" />
@@ -47,10 +178,11 @@
             Grid.Row="1"
             Grid.Column="2"
             BackgroundColor="Yellow" />-->
+    <!--
 
 
 
-    </Grid>
+    </Grid>-->
 
 
 </ContentPage>

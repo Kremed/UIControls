@@ -29,12 +29,19 @@
             FontSize="20"
             HorizontalOptions="Start"
             Text="Enter your name:" />
-
-
         <Entry
             x:Name="TxtName"
+            ClearButtonVisibility="WhileEditing"
+            HorizontalOptions="FillAndExpand"
+            MaxLength="10"
+            Placeholder="Name of User"
+            ReturnType="Next"
+            TextTransform="Uppercase" />
+
+        <!--<Entry
+            x:Name="TxtName"
             BackgroundColor="LightGray"
-            CharacterSpacing="15"
+            CharacterSpacing="2"
             ClearButtonVisibility="WhileEditing"
             Completed="TxtName_Completed"
             CursorPosition="0"
@@ -45,27 +52,30 @@
             FontSize="18"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Start"
+            IsEnabled="True"
             Keyboard="Email"
             MaxLength="10"
             Placeholder="Name"
             PlaceholderColor="LightCoral"
             ReturnType="Next"
+            Text="sss"
             TextChanged="TxtName_TextChanged"
             TextColor="Black"
             TextTransform="Uppercase"
             Unfocused="TxtName_Unfocused"
-            VerticalOptions="Center" />
+            VerticalOptions="Center" />-->
 
 
-        <Label
+        <!--<Label
             Margin="0,20,0,0"
             FontSize="20"
             HorizontalOptions="Start"
-            Text="Enter your Phone:" />
+            Text="Enter your Phone:" />-->
 
         <Entry
             x:Name="TxtPhone"
             BackgroundColor="LightGray"
+            ClearButtonVisibility="WhileEditing"
             FontSize="18"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Start"
@@ -84,13 +94,17 @@
         <Entry
             x:Name="TxtPassword"
             BackgroundColor="LightGray"
+            ClearButtonVisibility="WhileEditing"
+            Focused="TxtPassword_Focused"
             FontSize="18"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Start"
             IsPassword="True"
             Placeholder="Password"
             PlaceholderColor="Gray"
+            TextChanged="TxtPassword_TextChanged"
             TextColor="Black"
+            Unfocused="TxtPassword_Unfocused"
             VerticalOptions="Center" />
 
         <Button

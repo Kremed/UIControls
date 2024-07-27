@@ -8,23 +8,38 @@ public partial class GridLayout : ContentPage
         InitializeComponent();
     }
 
-    private async void BtnButtonsPage_Clicked(object sender, EventArgs e)
+    private void BtnButtonsPage_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new ButtonsView());
+        Navigation.PushModalAsync(new ButtonsView());
     }
 
-    private async void BtnEntryPage_Clicked(object sender, EventArgs e)
+    private void BtnEntryPage_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new EntryPage());
+        Navigation.PushModalAsync(new EntryPage());
     }
 
-    private async void BtnStackLayout_Clicked(object sender, EventArgs e)
+    private void BtnStackLayout_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new LayoutsPage());
+        Navigation.PushModalAsync(new LayoutsPage());
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private void BtnGridView_Clicked(object sender, EventArgs e)
     {
         Navigation.PushModalAsync(new GridViewPage());
+    }
+
+    private void BtnGoImages_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new ImagesPage());
+    }
+
+    private void BtnPicerPage_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new PickerPage());
+    }
+
+    private void BtnCalculator_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new CalculatorPage());
     }
 }

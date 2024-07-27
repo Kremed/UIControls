@@ -6,10 +6,18 @@ public partial class ButtonsView : ContentPage
     {
         InitializeComponent();
     }
+    int counter = 0;
     void OnButtonClicked(object sender, EventArgs e)
     {
+        if (counter != 3)
+        {
+            DisplayAlert("Event Triggered", $"Button Clicked {counter}", "OK");
+            counter = counter + 1;
+            return;
+        }
         //Clicked: يحدث عند النقر على الزر.
-        DisplayAlert("Event Triggered", "Button Clicked", "OK");
+        DisplayAlert("Event Triggered", "Ok You are Here", "OK");
+        counter = 0;
     }
 
     void OnButtonPressed(object sender, EventArgs e)
@@ -23,6 +31,7 @@ public partial class ButtonsView : ContentPage
     void OnButtonReleased(object sender, EventArgs e)
     {
         DisplayAlert("Event Triggered", "Button Released", "OK");
+        myButton.IsVisible = true;
     }
 
     //Focused: يحدث عند تركيز الزر، مثلًا عندما يحصل على التركيز بواسطة لوحة المفاتيح أو اللمس.
